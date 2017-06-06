@@ -1,0 +1,69 @@
+{
+  "Poloniex" : {
+    "pairs" : {
+      "BTC" : [
+        "XRP",
+        "ETH",
+        "DGB",
+        "STRAT",
+        "LTC",
+        "SC",
+        ""
+      ],
+      "ETH" : [
+
+      ]
+    },
+    "API" :
+  },
+  "Bithumb" : {
+    "pairs" : {
+      "BTC" : [
+
+      ],
+      "ETH" : [
+
+      ]
+    }
+  },
+  "Kraken" : {
+    "pairs" : {
+      "BTC" : [
+
+      ],
+      "ETH" : [
+
+      ]
+    }
+  },
+  "Bitfinex" : {
+    "pairs" : {
+      "BTC" : [
+
+      ],
+      "ETH" : [
+
+      ]
+    }
+  },
+  "Bittrex" : {
+    "pairs" : {
+      "BTC" : [
+
+      ],
+      "ETH" : [
+
+      ]
+    }
+  },
+  "Coinone" : {
+    "pairs" : {
+      "BTC" : [
+
+      ],
+      "ETH" : [
+
+      ]
+    }
+  }
+}

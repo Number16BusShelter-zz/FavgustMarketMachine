@@ -1,0 +1,51 @@
+{
+    "BTC" : {
+      "markets" : [
+        "polinex",
+        "bithumb",
+        "kraken",
+        "bitfinex",
+        "bittrex",
+        "coinone"
+      ]
+    },
+
+    "LTC" : {
+      "markets": [
+        "polinex",
+        "bithumb",
+        "kraken",
+        "bitfinex",
+        "bittrex",
+        "coinone"
+      ]
+    },
+
+    "ETH" : {
+
+    },
+
+    "XRP" : {
+      "markets": {
+
+      }
+    },
+
+    "GNT" : {
+      "markets": {
+
+      }
+    },
+
+    "XEM" : {
+      "markets": {
+
+      }
+    },
+
+    "XMR" : {
+      "markets": {
+
+      }
+    }
+}
