@@ -19,14 +19,23 @@ import bitfinex, urllib
 
 class Bitfinex:
     url = "https://api.bitfinex.com/v2/ticker/"
-    pair = "BTCUSD"
     obj_lst = None
     price = None
-    def __init__(self, pair):
-        self.pair = pair
+    def __init__(self, position_1, position_2="Null", btc=False):
+        if (position_2 == "Null"):
+            if (btc):
+                base = "BTC"
+            else:
+                base = "USD"
+        else:
+            base = position_1
+            position_1 = position_2
+        if (base == position_1):
+            return False
+
         import requests
         try:
-            self.obj_lst = requests.get(self.url + "t" + self.pair).json()
+            self.obj_lst = requests.get(self.url + "t" + position_1 + base).json()
             self.price = self.obj_lst[0]
             self.high = self.obj_lst[8]
             self.low = self.obj_lst[9]

@@ -3,9 +3,19 @@ import requests, urllib
 class Poloniex:
     url = "https://poloniex.com/public?command=returnTicker"
 
-    def __init__(self, position_1 = "USDT", position_2 = "BTC"):
+    def __init__(self, position_1 = "BTC", position_2 = "Null", btc=False):
+        if (position_2 == "Null"):
+            if (btc):
+                base = "BTC"
+            else:
+                base = "USDT"
+        else:
+            base = position_1
+            position_1 = position_2
+
+
         try:
-            self.obj_lst = requests.get(self.url).json()[position_1+'_'+position_2]
+            self.obj_lst = requests.get(self.url).json()[base+'_'+position_1]
 
             self.bid = self.obj_lst['highestBid']
             self.ask = self.obj_lst['lowestAsk']

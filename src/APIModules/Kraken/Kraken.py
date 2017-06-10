@@ -10,7 +10,7 @@ class Kraken:
         except urllib.error.HTTPError as err:
             print(err)
 
-    def __init__(self, pair):
+    def __init__(self, pair, btc=False):
         url = "https://api.kraken.com/0/public/Ticker?pair="
         try:
             self.obj_lst = requests.get(url+pair+"EUR").json()
